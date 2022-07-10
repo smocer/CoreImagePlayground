@@ -6,13 +6,13 @@
 //
 
 import CoreImage
+import simd
 
 final class CustomColorMap: CIFilter {
 
     static let colorMapKernel = CIKernel(source: """
       kernel vec4 colorMapKernel(sampler src, sampler gradient) {
         vec4 imageColor = sample(src, samplerCoord(src));
-        vec2 uv = samplerCoord(src)/samplerSize(src);
 
         float grayscale = dot(imageColor.rgb, vec3(0.299, 0.587, 0.114));
 

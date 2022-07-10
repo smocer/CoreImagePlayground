@@ -15,5 +15,8 @@ enum Resources {
         static var sampleImage2: URL {
             Bundle.main.url(forResource: "sample2", withExtension: "jpeg")!
         }
+        static var sampleImage3: URL {
+            Bundle.main.url(forResource: "sample3", withExtension: "jpeg")!
+        }
     }
 }

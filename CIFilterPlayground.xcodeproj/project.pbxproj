@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C46363C287AC3490030F7D8 /* CustomColorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46363B287AC3490030F7D8 /* CustomColorMap.swift */; };
 		6C46363E287AC9FD0030F7D8 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C46363D287AC9FD0030F7D8 /* UIImage+Extensions.swift */; };
+		6C463640287AD9FE0030F7D8 /* sample3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6C46363F287AD9FE0030F7D8 /* sample3.jpeg */; };
 		6C76291327FC48DB005756E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76291227FC48DB005756E5 /* AppDelegate.swift */; };
 		6C76291527FC48DB005756E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76291427FC48DB005756E5 /* SceneDelegate.swift */; };
 		6C76291727FC48DB005756E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C76291627FC48DB005756E5 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		6C46363B287AC3490030F7D8 /* CustomColorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorMap.swift; sourceTree = "<group>"; };
 		6C46363D287AC9FD0030F7D8 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6C46363F287AD9FE0030F7D8 /* sample3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample3.jpeg; sourceTree = "<group>"; };
 		6C76290F27FC48DB005756E5 /* CIFilterPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CIFilterPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C76291227FC48DB005756E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C76291427FC48DB005756E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				6C76293627FDA396005756E5 /* sample1.jpeg */,
 				6C76293727FDA396005756E5 /* sample2.jpeg */,
+				6C46363F287AD9FE0030F7D8 /* sample3.jpeg */,
 			);
 			path = "Sample resources";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				6C76293927FDA396005756E5 /* sample2.jpeg in Resources */,
 				6C76291F27FC48DE005756E5 /* LaunchScreen.storyboard in Resources */,
 				6C76291C27FC48DE005756E5 /* Assets.xcassets in Resources */,
+				6C463640287AD9FE0030F7D8 /* sample3.jpeg in Resources */,
 				6C76293827FDA396005756E5 /* sample1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
