@@ -19,10 +19,10 @@ jobs:
             # https://github.com/peter-evans/create-pull-request/issues/48
             # token: ${{ secrets.GITHUB_TOKEN }}
             branch: ${{ github.event.sender.login }}-localization-${{ github.run_number }}
-            title: Localization update - ${{ github.event.sender.login }}
+            title: Test update - ${{ github.event.sender.login }}
             labels: automated pr
             delete-branch: true
       - name: Echo PR url
         if: ${{ steps.cpr.outputs.pull-request-url }}
         run: |
-            echo "Created PR for localization update: ${{ steps.cpr.outputs.pull-request-url }}"
+            echo "Created PR for test update: ${{ steps.cpr.outputs.pull-request-url }}"
