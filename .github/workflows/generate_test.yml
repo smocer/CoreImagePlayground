@@ -1,0 +1,28 @@
+name: Generate test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Generate-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate test
+        run: |
+          python ci_scripts/generator.py
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v4
+        with:
+            # https://github.com/peter-evans/create-pull-request/issues/48
+            # token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.event.sender.login }}-localization-${{ github.run_number }}
+            title: Localization update - ${{ github.event.sender.login }}
+            labels: automated pr
+            delete-branch: true
+      - name: Echo PR url
+        if: ${{ steps.cpr.outputs.pull-request-url }}
+        run: |
+            echo "Created PR for localization update: ${{ steps.cpr.outputs.pull-request-url }}"
